@@ -45,4 +45,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: webhook
-      run: curl -X POST ${{ secrets.WEBHOOK_URL }}
+      run: curl -k -X POST ${{ secrets.WEBHOOK_URL }}
